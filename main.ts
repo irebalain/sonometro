@@ -1,14 +1,14 @@
 basic.forever(function () {
     if (input.soundLevel() == 0) {
         basic.showIcon(IconNames.Heart)
-        basic.pause(30000)
+        basic.pause(200)
     } else {
-        if (input.soundLevel() < 100) {
+        if (input.soundLevel() < 10) {
             basic.showIcon(IconNames.Happy)
-            basic.pause(30000)
+            basic.pause(200)
         } else {
             basic.showIcon(IconNames.Sad)
-            basic.pause(30000)
+            basic.pause(200)
         }
     }
 })
